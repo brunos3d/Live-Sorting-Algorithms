@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>HTML5 Canvas</title>
+
+	<!-- styles -->
+	<link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+
+	<div class="main-container">
+		<div class="content">
+			<div>
+				<button onclick="Reset()">Reset</button>
+				<button onclick="Shuffle()">Shuffle</button>
+			</div>
+			<div>
+				<button onclick="BubbleSort()">BubbleSort</button>
+				<button onclick="SelectionSort()">SelectionSort</button>
+				<button onclick="InsertionSort()">InsertionSort</button>
+			</div>
+			<canvas id="canvas-board" width="30" height="30">
+			</canvas>
+		</div>
+	</div>
+
+	<script src="./src/levels.js"></script>
+	<script src="./src/index.js"></script>
+
+</body>
+
+</html>

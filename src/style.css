@@ -18,13 +18,6 @@
     justify-content: center;
 }
 
-.score-content {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 #canvas-board {
     width: 600px;
     height: 300px;

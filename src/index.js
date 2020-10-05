@@ -43,7 +43,7 @@ function timer(ms) {
     return new Promise((res) => setTimeout(res, ms));
 }
 
-async function Swap(index1, index2, time = 15) {
+async function Swap(index1, index2, time = 50) {
     let temp = trail[index1];
     trail[index1] = trail[index2];
     trail[index2] = temp;
@@ -64,7 +64,7 @@ async function Reset() {
     for (let x = 0; x < width; x++) {
         trail[x] = (x + 1) * (width / height);
 
-        await timer(15);
+        await timer(50);
         PlaySoundOneShot(x);
         Repaint(x);
     }
@@ -145,7 +145,7 @@ function PlaySoundOneShot(index) {
     const note = new Sound(audio_context);
     const now = audio_context.currentTime;
 
-    note.play(index * 10, now - 0.9);
+    note.play(1000 - index * 50, now - 0.9);
 }
 
 function Repaint(currentIndex = -1) {

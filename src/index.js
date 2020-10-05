@@ -43,7 +43,7 @@ function timer(ms) {
     return new Promise((res) => setTimeout(res, ms));
 }
 
-async function Swap(index1, index2, time = 50) {
+async function Swap(index1, index2, time = 15) {
     let temp = trail[index1];
     trail[index1] = trail[index2];
     trail[index2] = temp;

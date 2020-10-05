@@ -2,6 +2,10 @@
 
 🎲 JavaScript - View sorting algorithms in action.
 
+# Demo
+
+https://brunos3d.github.io/Live-Sorting-Algorithms/
+
 # References
 
 https://medium.com/javascript-in-plain-english/simple-sorting-algorithms-in-javascript-57d512ceaf5d
